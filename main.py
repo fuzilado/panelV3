@@ -64,9 +64,9 @@ def menu():
     import os
     os.system("pkg install figlet")
     os.system("clear")
-    print("Coded By: \033[1;36m MARKOS \033[m and \033[1;36m NINGUEM \033[m in 07/02/2021")
+    print("Coded By: \033[1;36m HUGO \033[m and \033[1;36m NINGUEM \033[m in 07/02/2021")
     print()
-    os.system("figlet MARKOS")
+    os.system("figlet HUGO")
     #print(f'{C}[{G}*{C}] Bem vindo,' + user)
     print()
     print("\033[32m{1} BUSCADOR DE CEP\033[m")
@@ -298,7 +298,7 @@ def menu():
             'Virgin Islands': 'VI'
                 }
         clear()
-        os.system('figlet MARKOS')
+        os.system('figlet HUGO')
         try:
             lista=open(input(f'{C}Caminho da lista: '), 'r').read().splitlines()
         except:
@@ -368,7 +368,7 @@ def menu():
         def choityp():
             R='\033[1;31m'; B='\033[1;34m'; C='\033[1;37m'; Y='\033[1;33m'; G='\033[1;32m'; RT='\033[;0m'
             clear()
-            os.system('figlet MARKOS')
+            os.system('figlet HUGO')
             global loufi
             print(f'{C}[{Y}*{C}] Digite o IP.')
             loufi = input('===>')
@@ -410,7 +410,7 @@ def menu():
         def consultabin():
             R='\033[1;31m'; B='\033[1;34m'; C='\033[1;37m'; Y='\033[1;33m'; G='\033[1;32m'; RT='\033[;0m'
             clear()
-            os.system('figlet MARKOS')
+            os.system('figlet HUGO')
             print('Exemplo:45717360')
             print(f'{C}[{Y}i{C}] Digite a BIN.')
             bin_input = input("===>")
@@ -421,7 +421,7 @@ def menu():
             except:
                 print(f'{C}[{R}i{C}] Ocorreu um erro,tente novamente.')
             clear()
-            os.system('figlet MARKOS')
+            os.system('figlet HUGO')
             print('Bandeira: {}'.format(req_data['scheme']))
             print('Marca: {}'.format(req_data['brand']))
             print('Tipo: {}'.format(req_data['type']))
@@ -462,7 +462,7 @@ def menu():
         def consultaddd():
             R='\033[1;31m'; B='\033[1;34m'; C='\033[1;37m'; Y='\033[1;33m'; G='\033[1;32m'; RT='\033[;0m'
             clear()
-            os.system('figlet MARKOS')
+            os.system('figlet HUGO')
             for ins in range(1, 999, 1):
                 ins = int(input('Digite o DDD: '))
 
@@ -616,7 +616,7 @@ def menu():
             R='\033[1;31m'; B='\033[1;34m'; C='\033[1;37m'; Y='\033[1;33m'; G='\033[1;32m'; RT='\033[;0m'
             import requests
             clear()
-            os.system("figlet MARKOS")
+            os.system("figlet HUGO")
             global op_input
             print(f'{C}[{G}i{C}] Exemplo: 94988088531')
             print(f'{C}[{Y}i{C}] Limite de consultas: 6 consultas por hora.')
@@ -670,7 +670,7 @@ def menu():
                 tiposop()
         def tiposop():
             clear()
-            os.system('figlet MARKOS')
+            os.system('figlet HUGO')
             print(f'O que deseja fazer?')
             print('1.Consultar operadora por numero')
             print('2.Consultar DDD')
@@ -692,7 +692,7 @@ def menu():
             R='\033[1;31m'; B='\033[1;34m'; C='\033[1;37m'; Y='\033[1;33m'; G='\033[1;32m'; RT='\033[;0m'
             import requests
             clear()
-            os.system("figlet MARKOS")
+            os.system("figlet HUGO")
             global crm_input
             global uf_input
             print(f'{C}[{G}i{C}] Digite o numero do CRM.')
@@ -739,14 +739,14 @@ def menu():
         def consultaplaca():
             R='\033[1;31m'; B='\033[1;34m'; C='\033[1;37m'; Y='\033[1;33m'; G='\033[1;32m'; RT='\033[;0m'
             clear()
-            os.system("figlet MARKOS")
+            os.system("figlet HUGO")
             print(f'{C}[{G}i]{C}Digite o numero da placa.')
             placa_input = input("===>")
             from requests import get
             req = requests.get('https://apicarros.com/v1/consulta/{}/json'.format(placa_input), verify = False) # JSQ7436
             placa_data = req.json()
             clear()
-            os.system('figlet MARKOS')
+            os.system('figlet HUGO')
             if (placa_data['codigoRetorno']) == "0":
                 print(f"{C}Ano: {B}{placa_data['ano']}{C}")
                 print(f"Data: {B}{placa_data['data']}{C}")
@@ -816,7 +816,7 @@ def menu():
             import requests, os, time, base64, json, re
             from requests import get
             os.system("clear")
-            os.system("figlet MARKOS")
+            os.system("figlet HUGO")
             print(f'{C}[{G}*{C}] Gerando CNS...')
             time.sleep(1)
             cns=requests.request('GET','http://geradorapp.com/api/v1/cns/generate?token=f01e0024a26baef3cc53a2ac208dd141').json()
@@ -830,7 +830,7 @@ def menu():
         def tipocns():
             R='\033[1;31m'; B='\033[1;34m'; C='\033[1;37m'; Y='\033[1;33m'; G='\033[1;32m'; RT='\033[;0m'
             clear()
-            os.system('figlet MARKOS')
+            os.system('figlet HUGO')
             print(f'''
 {C}[{G}i{C}]Formas de operação
 [{G}1{C}]Gerar CNS
@@ -852,7 +852,7 @@ def menu():
         def gerarcpf():
             R='\033[1;31m'; B='\033[1;34m'; C='\033[1;37m'; Y='\033[1;33m'; G='\033[1;32m'; RT='\033[;0m'
             clear()
-            os.system('figlet MARKOS')
+            os.system('figlet HUGO')
             print(f'{C}[{G}i{C}] Gerando CPF...')
             time.sleep(1)
             cpf=requests.request('GET','http://geradorapp.com/api/v1/cpf/generate?token=f01e0024a26baef3cc53a2ac208dd141').json()
@@ -903,7 +903,7 @@ def menu():
         def tipos():
             R='\033[1;31m'; B='\033[1;34m'; C='\033[1;37m'; Y='\033[1;33m'; G='\033[1;32m'; RT='\033[;0m'
             clear()
-            os.system('figlet MARKOS')
+            os.system('figlet HUGO')
             print(f"""
 {C}[{G}i{C}] Formas de operação:
     1.Consultar CPF
@@ -933,7 +933,7 @@ def menu():
             import requests, os, time, base64, json, re
             from requests import get
             clear()
-            os.system("figlet MARKOS")
+            os.system("figlet HUGO")
             print("DIGITE O CODIGO BANCARIO")
             bank_input = input("\033[32m=====> \033[m")
             try:
@@ -943,7 +943,7 @@ def menu():
 
                 if 'message' not in bank_data:
             	    clear()
-            	    os.system("figlet MARKOS")
+            	    os.system("figlet HUGO")
             	    print("Código bancário: {}".format(bank_data['code']))
             	    print("Nome: {}".format(bank_data['name']))
             	    print("Nome completo: {}".format(bank_data['fullName']))
@@ -1022,7 +1022,7 @@ def menu():
         os.system("pkg install whois")
         os.system("pkg install python")
         os.system("clear")
-        print("\033[1;36m MARKOS \033[m")
+        print("\033[1;36m HUGO \033[m")
         print()
         j = input("1 for HTTPS, 2 for HTTP:")
         print()
@@ -1094,7 +1094,7 @@ def menu():
             import requests, os, time, base64, json, re
             from requests import get
             os.system("clear")
-            os.system("figlet MARKOS")
+            os.system("figlet HUGO")
             print(f'{C}[{G}*{C}] Gerando CNPJ...')
             time.sleep(1)
             cnpj=requests.request('GET','http://geradorapp.com/api/v1/cnpj/generate?token=f01e0024a26baef3cc53a2ac208dd141').json()
@@ -1178,7 +1178,7 @@ def menu():
                 menu()
         def tipo():
             clear()
-            os.system('figlet MARKOS')
+            os.system('figlet HUGO')
             print('''
 O QUE DESEJA FAZER?
 {1}GERAR CNPJ
@@ -1217,7 +1217,7 @@ def password():
     user = input("USERNAME:  ")
     snh = 'VirtualInsanity'
     print("\n ")
-    if user == 'Markos' or user == 'MARKOS':
+    if user == 'Markos' or user == 'HUGO':
         markosmode()
     if input("PASSWORD:  ").strip() == snh:
         menu()
